@@ -63,12 +63,12 @@ SSM URN - `arn:aws:ssm:us-east-1:<account-id>:parameter/<name>`
 ## Setting up App Mesh
 
 #### Virtual nodes 
-- currency-exchange-service-vn - currency-exchange-service.in28minutes-dev.com
-- currency-conversion-service-vn - currency-conversion-service.in28minutes-dev.com
+- currency-exchange-service-vn - currency-exchange-service.itrahulit-dev.com
+- currency-conversion-service-vn - currency-conversion-service.itrahulit-dev.com
 
 #### Virtual services 
-- currency-exchange-service.in28minutes-dev.com -> currency-exchange-service-vn
-- currency-conversion-service.in28minutes-dev.com -> currency-conversion-service-vn
+- currency-exchange-service.itrahulit-dev.com -> currency-exchange-service-vn
+- currency-conversion-service.itrahulit-dev.com -> currency-conversion-service-vn
 
 #### Backend Registration
 - currency-conversion-service-vn -> currency-exchange-service.in28minutes-dev.com
