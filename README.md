@@ -2,32 +2,24 @@
 
 
 
-## Learn Amazon Web Services - AWS - deploying Spring Boot and Docker Microservices to AWS Fargate. Implement Service Discovery, Load Balancing, Auto Discovery, Centralized Configuration and Distributed Tracing in AWS.
+AWS -r deploying Spring Boot and Docker Microservices to AWS Fargate. Implement Service Discovery, Load Balancing, Auto Discovery, Centralized Configuration and Distributed Tracing in AWS.
 
 Spring Boot is the No 1 Java Framework to develop REST API and Microservices. AWS (Amazon Web Services) is the No 1 Cloud Service Provider today.
 
 How about learning AWS by deploying Spring Boot Docker Containers to Amazon Web Services using Elastic Container Service - ECS and AWS Fargate?
 
-## Getting Started
-
-- [Video - Docker in 5 Steps](https://youtu.be/Rt5G5Gj7RP0)
-- [Video - Spring in 10 Steps](https://www.youtube.com/watch?v=edgZo2g-LTM)
-- [Video - Spring Boot in 10 Steps](https://www.youtube.com/watch?v=pcdpk3Yd1EA)
-- [Video - JPA/Hibernate in 10 Steps](https://www.youtube.com/watch?v=MaI0_XdpdP8)
-- [AWS Code Pipeline Github Repo](https://github.com/in28minutes/hello-world-rest-api-aws-ecs-codepipeline)
-
 ## Container Images
 
 |     Application                 |    Container                                  |
 | ------------------------------- | --------------------------------------------- |
-| Hello World | in28min/aws-hello-world-rest-api:1.0.0-RELEASE |
-| Simple Task | in28min/aws-simple-spring-task:1.0.0-RELEASE |
-| CurrencyExchangeMicroservice-H2 | in28min/aws-currency-exchange-service-h2:0.0.1-SNAPSHOT |
-| CurrencyExchangeMicroservice-H2 - V2 | in28min/aws-currency-exchange-service-h2:1.0.1-RELEASE|
-| CurrencyExchangeMicroSevice-MySQL| in28min/aws-currency-exchange-service-mysql:0.0.1-SNAPSHOT|
-| CurrencyConversionMicroservice | in28min/aws-currency-conversion-service:0.0.1-SNAPSHOT |
-| Currency Exchange - X Ray | in28min/aws-currency-exchange-service-h2-xray:0.0.1-SNAPSHOT|
-| Currency Conversion - X Ray | in28min/aws-currency-conversion-service-xray:0.0.1-SNAPSHOT|
+| Hello World | itrahulit/aws-hello-world-rest-api:1.0.0-RELEASE |
+| Simple Task | itrahulit/aws-simple-spring-task:1.0.0-RELEASE |
+| CurrencyExchangeMicroservice-H2 | itrahulit/aws-currency-exchange-service-h2:0.0.1-SNAPSHOT |
+| CurrencyExchangeMicroservice-H2 - V2 | itrahulit/aws-currency-exchange-service-h2:1.0.1-RELEASE|
+| CurrencyExchangeMicroSevice-MySQL| itrahulit/aws-currency-exchange-service-mysql:0.0.1-SNAPSHOT|
+| CurrencyConversionMicroservice | itrahulit/aws-currency-conversion-service:0.0.1-SNAPSHOT |
+| Currency Exchange - X Ray | itrahulit/aws-currency-exchange-service-h2-xray:0.0.1-SNAPSHOT|
+| Currency Conversion - X Ray | itrahulit/aws-currency-conversion-service-xray:0.0.1-SNAPSHOT|
 
 |     Utility       |     Container Image        |
 | ------------- | ------------------------- |
@@ -109,9 +101,6 @@ currency-exchange-service-vr distributing traffic to
 - currency-exchange-service-vn
 - currency-exchange-service-v2-vn
 
-#### App Mesh - Update Service to Use Virtual Router
-currency-exchange-service.in28minutes-dev.com -> currency-exchange-service-vr
-
 
 #### jq
 
@@ -151,67 +140,6 @@ aws servicediscovery delete-namespace --id=ns-ctvtysasurklojm3
 
 - [Playlist - Installing Java, Eclipse & Embedded Maven](https://www.youtube.com/playlist?list=PLBBog2r6uMCSmMVTW_QmDLyASBvovyAO3)
 
-#### Troubleshooting Installations
-- Eclipse and Embedded Maven
-  - Troubleshooting Guide : https://github.com/in28minutes/in28minutes-initiatives/tree/master/The-in28Minutes-TroubleshootingGuide-And-FAQ#tip--troubleshooting-embedded-maven-in-eclipse
-  - PDF : https://github.com/in28minutes/SpringIn28Minutes/blob/master/InstallationGuide-JavaEclipseAndMaven_v2.pdf
-  - GIT Repository For Installation : https://github.com/in28minutes/getting-started-in-5-steps
-
-## Course Overview
-
-This course would be a perfect first step as an introduction to Amazon Web Services - AWS and the Cloud.
-
-In this course, we deploy a variety of Java Spring Boot Microservices to Amazon Web Services using AWS Fargate and ECS - Elastic Container Service. 
-
-You will learn the basics of implementing Container Orchestration with ECS (Elastic Container Service) - Cluster, Task Definitions, Tasks, Containers and Services. You will learn about the two launch types of ECS - EC2 and AWS Fargate. In this course, we would focus extensively on AWS Fargate to simplify your Container Orchestration. You will learn to deploy multiple containers in the same ECS task.
-
-You will learn to Build Container Images for your Java Spring Boot Microservice Projects.
-
-You will implement the following features for your Microservices
-- Centralized Configuration Management with AWS Parameter Store
-- Distributed Tracing with AWS X Ray
-- Auto Scaling and Load Balancing with ECS, Elastic Load Balancers and Target Groups
-- Service Mesh using AWS App Mesh. You will learn the basics of AWS App Mesh - Mesh, Virtual Nodes and Virtual Services. You will learn to perform Canary Deployments using AWS AppMesh.
-- Service Discovery with Route 53 Hosted Zones and DNS.
-- Continuous Integration and Continuous Deployment with AWS Code Pipeline
-
-You will learn to debug problems with deploying containers using Service events and AWS CloudWatch logs.
-
-You will learn about automating deployments and creating a continuous delivery pipeline with AWS Code Pipeline. You will learn how to Auto Scale applications based on load as well as deploy multiple instances behind a load balancer using AWS ECS Fargate.
-
-You will be using a number of AWS Services - ECS - Elastic Container Services, AWS Fargate, EC2 - Elastic Compute Cloud, S3, AWS CodePipeLine, AWS CodeBuild, IAM, CloudWatch, ELB, Target Groups, X Ray, AWS Parameter Store, AWS App Mesh and Route 53. 
-
-You will be using deploying a variety of projects to Amazon Web Services (AWS). These projects are created with  Spring Boot (REST API Framework), Spring (Dependency Management), Maven (dependencies management), Eclipse (Java IDE) and Tomcat Embedded Web Server. We will help you set up each one of these.
-
-## What you'll learn
-- You will Learn the Fundamentals of Amazon Web Services from Zero, no previous experience required
-- You will learn to deploy Spring Boot REST API and Microservices to AWS with AWS Fargate and ECS
-- You will learn the basics of implementing Container Orchestration with ECS (Elastic Container Service) - Cluster, Task Definitions, Tasks, Containers and Services
-- You will learn to Build Container Images for your Java Spring Boot Microservice Projects
-- You will learn about the two launch types of ECS - EC2 and AWS Fargate
-- You will learn to debug problems with deploying containers using Service events and AWS CloudWatch logs
-- You will be using a number of AWS Services - ECS - Elastic Container Services, AWS Fargate, EC2 - Elastic Compute Cloud, S3, AWS CodePipeLine, AWS CodeBuild, IAM, CloudWatch, ELB, Target Groups, X Ray, AWS Parameter Store, AWS App Mesh and Route 53
-- You will learn to create a continuous delivery pipeline with AWS Code Pipeline
-- You will learn how to Auto Scale applications based on load as well as deploy multiple instances behind a load balancer using AWS Fargate.
-- You will learn to implement Centralized Configuration Management for your Java Spring Boot Microservices with AWS Parameter Store
-- You will learn to implement Distributed Tracing for Java Spring Boot Microservices with AWS X Ray
-- You will learn the basics of AWS App Mesh - Mesh, Virtual Nodes and Virtual Services. You will learn to perform Canary Deployments for Java Spring Boot Microservices using AWS AppMesh.
-- You will Join 300,000 Learners having AMAZING LEARNING Experiences with in28Minutes
-
-## Requirements
-- You have an attitude to learn while having fun :)
-- You have some programming experience with Java, Spring and Spring Boot
-- You have a valid debit or credit card to create a AWS Account
-- AWS Fargate is not in FREE Tier. You are responsible for monitoring the usage of AWS resources to reduce your billing.
-- You DO NOT need to have any experience with AWS (Amazon Web Services)
-
-
-## Step By Step Details
-
-### Getting Started with the course
-
-- Step 00 - Deploying Spring Boot Microservices with ECS and AWS Fargate - Introduction
-- Step 01 - Deploying Spring Boot Microservices with ECS and AWS Fargate - Getting Started with the Course
 
 ### Getting Started with AWS
 
@@ -594,14 +522,3 @@ HostOS -- CloudInfrastructure [style=invis]
 
 }
 ```
-
-### Troubleshooting
-- Refer our TroubleShooting Guide - https://github.com/in28minutes/in28minutes-initiatives/tree/master/The-in28Minutes-TroubleshootingGuide-And-FAQ
-
-## Youtube Playlists - 500+ Videos
-
-[Click here - 30+ Playlists with 500+ Videos on Spring, Spring Boot, REST, Microservices and the Cloud](https://www.youtube.com/user/rithustutorials/playlists?view=1&sort=lad&flow=list)
-
-## Keep Learning in28Minutes
-
-in28Minutes is creating amazing solutions for you to learn Spring Boot, Full Stack and the Cloud - Docker, Kubernetes, AWS, React, Angular etc. - [Check out all our courses here](https://github.com/in28minutes/learn)
